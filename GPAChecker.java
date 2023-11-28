@@ -2,6 +2,7 @@
  * GUI, but rather is text-based to ensure the code works properly. This file is a testing file which will be synced via the THS computer and my person computer through my personal
  * Github account. This test Java file will be coded in Visual Studio Code.*/
 
+ //UPDATED ON 11/28/2023 10:01 AM 
 import java.util.Scanner; //imports user input
 public class GPAChecker { //creates the GPA Checker class
     public static void main(String[] args){
