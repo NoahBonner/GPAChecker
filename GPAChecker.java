@@ -8,12 +8,16 @@ public class GPAChecker { //creates the GPA Checker class
         System.out.println("How many classes do you take?\n");
         Scanner sc = new Scanner(System.in); //prompts the user for input
         int classes = sc.nextInt();
-        String[][] className = ""; //TURNING THIS INTO AN MULTIDIMENSIONAL ARRAY 
+        String className = "";
+        String letterGrade = "";
         while (classes > -1){
             System.out.println("Enter the name of your class.");
             className = className + sc.nextLine() + "\n";
+            System.out.println("Now, enter your LETTER grade (i.e. A, A-, B+, etc.)");
+            letterGrade = letterGrade + sc.nextLine() + "\n";
             classes--;
         }
         System.out.println("The classes you take are: \n" + className);
+        System.out.println("and your grades of your classes are: \n" + letterGrade);
     }
 }
