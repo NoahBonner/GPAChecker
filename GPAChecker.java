@@ -11,14 +11,24 @@ public class GPAChecker { //creates the GPA Checker class
         int classes = sc.nextInt();
         String className = "";
         String letterGrade = "";
+        int gpaScoreUnweighted = 0;
+        int gpaScoreWeighted = 0;
         while (classes > -1){
             System.out.println("Enter the name of your class.");
             className = className + sc.nextLine() + "\n";
             System.out.println("Now, enter your LETTER grade (i.e. A, A-, B+, etc.)");
             letterGrade = letterGrade + sc.nextLine() + "\n";
             classes--;
+            if (letterGrade == "A"){
+                gpaScoreUnweighted+=4.0;
+                gpaScoreWeighted+=5.0;
+            }else if (letterGrade == "A-"){
+                gpaScoreUnweighted+=3.7;
+                gpaScoreWeighted+=4.7;
+            }
         }
         System.out.println("The classes you take are: \n" + className);
         System.out.println("and your grades of your classes are: \n" + letterGrade);
+        System.out.println("Your GPAs are: " + gpaScoreUnweighted + gpaScoreWeighted);
     }
 }
